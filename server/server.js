@@ -9,6 +9,7 @@ import configDotenv from "dotenv";
 import DbConnect from "./config/mongooseConnection.js";
 import userModel from "./models/userModel.js";
 import auth from "./routes/authRoute.js";
+import course from './routes/courseRoutes.js'
 
 
 // express configuration
@@ -23,6 +24,7 @@ app.use(express.json());
 
 //routes
 app.use('/auth',auth)
+app.use('/course',course)
 
 //connecting to db
 DbConnect();

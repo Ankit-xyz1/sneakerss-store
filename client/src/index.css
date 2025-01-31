@@ -1,7 +1,35 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Jersey+15&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&family=Shadows+Into+Light&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.jet{
+  font-family: "JetBrains Mono", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
 
+.jersey {
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jack {
+  font-family: "Jacquarda Bastarda 9", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.robot {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.shadow{
+  font-family: "Shadows Into Light", serif;
+  font-weight: 400;
+  font-style: normal;
+}

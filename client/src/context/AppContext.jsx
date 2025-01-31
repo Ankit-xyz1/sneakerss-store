@@ -5,7 +5,7 @@ export const AppContent = createContext();
 export const AppContextProvider = (props) => {
   const backend = import.meta.env.VITE_BACKEND_URL
   const [isLoggedIn , setisLoggedIn] = useState(false)
-  const [userData, setuserData] = useState(false)
+  const [userData, setuserData] = useState('xxx')
   const value = {
     backend,
     isLoggedIn,

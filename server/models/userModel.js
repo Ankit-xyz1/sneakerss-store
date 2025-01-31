@@ -1,4 +1,4 @@
-import mongoose, { Types } from "mongoose";
+import mongoose, { Schema, Types } from "mongoose";
 
 const UserSchema = mongoose.Schema({
     name:{
@@ -24,7 +24,17 @@ const UserSchema = mongoose.Schema({
     mailCount:{
         type:Number,
         default:0
-    }
+    },
+    haveCourses:[{
+        type:Schema.Types.ObjectId,
+        ref:'course'
+    }],
+    CreatedCourse:[
+        {
+            type:Schema.Types.ObjectId,
+            ref:'course'
+        }
+    ]
 })
 
 let UserModel = mongoose.model.user || mongoose.model("user",UserSchema)
